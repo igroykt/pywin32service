@@ -8,6 +8,8 @@ Windows Resource Kits: https://www.microsoft.com/en-us/download/details.aspx?id=
 
 Administrator rights to get access to system registry
 
+Make sure that path to Windows Resource Kits and Python exists in %PATH%
+
 ### Basic usage:
 install - install script as service
 
