@@ -35,6 +35,12 @@ D:\pywin32service>sc query test
         Код_выхода_службы  : 0  (0x0)
         Контрольная_точка  : 0x0
         Ожидание           : 0x0
+
+D:\pywin32service>net stop test
+Служба "Python Test Script" успешно остановлена.
+
+D:\pywin32service>python test.py uninstall
+Service uninstalled successfully
 ```
 
 ### Class usage:
