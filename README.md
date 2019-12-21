@@ -10,12 +10,32 @@ Administrator rights to get access to system registry
 
 Make sure that path to Windows Resource Kits and Python exists in %PATH%
 
-### Basic usage:
+### Commands:
 install - install script as service
 
 uninstall - remove service
 
 help - print usage info
+
+### Basic usage:
+```
+D:\pywin32service>python test.py install
+Service installed successfully
+
+D:\pywin32service>net start test
+Служба "Python Test Script" запускается.
+Служба "Python Test Script" успешно запущена.
+
+D:\pywin32service>sc query test
+Имя_службы: test
+        Тип                : 10  WIN32_OWN_PROCESS
+        Состояние          : 4  RUNNING
+                                (STOPPABLE, PAUSABLE, ACCEPTS_SHUTDOWN)
+        Код_выхода_Win32   : 0  (0x0)
+        Код_выхода_службы  : 0  (0x0)
+        Контрольная_точка  : 0x0
+        Ожидание           : 0x0
+```
 
 ### Class usage:
 **Basic initialization:** myapp = pywin32service.PyWIN32Service("test", "d:\\pywin32service\\test.py", "Python Test Script")
