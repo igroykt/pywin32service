@@ -101,7 +101,7 @@ class PyWIN32Service:
 			raise SystemExit(f"Service install failed: {e}")
 
 	def uninstall(self):
-		code, out, err = self.call(f"sc query {self.service_name}|findstr SERVICE_NAME")
+		code, out, err = self.call(f"sc query {self.service_name}|findstr {self.service_name}")
 		if not out:
 			sys.exit("Service not exist")
 		code, out, err = self.call(f"sc delete {self.service_name}")
