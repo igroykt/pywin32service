@@ -75,8 +75,6 @@ class PyWIN32Service:
 			raise SystemExit(f"Add '{key}' registry key error: {e}")
 
 	def install(self):
-		#srvany_env = ""
-		#python_env = ""
 		try:
 			code, out, err = self.call(f"sc query {self.service_name}|findstr SERVICE_NAME")
 			if out:
