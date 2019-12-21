@@ -1,5 +1,5 @@
 # PyWIN32Service
-Install Python script as Windows Service. This is a wrapper for srvany and compatible with ConfigParser or any other libraries. You can use srvany and create registry keys manually each time or you can use this wrapper that will handle the rest.
+Install Python script as Windows Service. This is a wrapper for srvany and compatible with ConfigParser or any other libraries. You can use srvany and create registry keys manually each time or you can use this wrapper that will handle the rest. To use it you have to change the entry point of your program so that it pays respect to the wrapper (see test.py for example).
 
 ### Requirements:
 Python 3.x
