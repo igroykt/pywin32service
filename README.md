@@ -1,5 +1,5 @@
 # PyWIN32Service
-Install Python script as Windows Service. Doesn't broke ConfigParser.
+Install Python script as Windows Service. Compatible with ConfigParser.
 
 ### Requirements:
 Python 3.x
