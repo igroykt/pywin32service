@@ -76,7 +76,7 @@ class PyWIN32Service:
 
 	def install(self):
 		try:
-			code, out, err = self.call(f"sc query {self.service_name}|findstr SERVICE_NAME")
+			code, out, err = self.call(f"sc query {self.service_name}|findstr {self.service_name}")
 			if out:
 				sys.exit("Service already installed")
 			srvany = self.findSrvanyPath()
