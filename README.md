@@ -10,13 +10,6 @@ Administrator rights to get access to system registry
 
 Make sure that path to Windows Resource Kits and Python exists in %PATH%
 
-### Commands:
-install - install script as service
-
-uninstall - remove service
-
-help - print usage info
-
 ### Basic usage:
 ```
 D:\pywin32service>python test.py install
