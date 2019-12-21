@@ -44,7 +44,7 @@ Service uninstalled successfully
 ```
 
 ### Class usage:
-**Initialization:** myapp = pywin32service.PyWIN32Service("test", "d:\\pywin32service\\test.py", "Python Test Script")
+**Initialization:** myapp = pywin32service.PyWIN32Service("test", "d:\\\pywin32service\\\test.py", "Python Test Script")
 
 Parameter 1 is a name of service (type: string).
 
